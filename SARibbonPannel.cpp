@@ -222,7 +222,7 @@ void SARibbonPannel::addSeparator()
     action->setSeparator(true);
     addAction(action);
 #else
-    SARibbonSeparatorWidget* sep = RibbonSubElementDelegate->createRibbonSeparatorWidget(height() - 10,this);
+    SARibbonSeparatorWidget* sep = RibbonSubElementDelegate->createRibbonSeparatorWidget(height() - 20,this);
     m_d->m_gridLayout->addWidget(sep,0,m_d->m_gridLayout->columnCount(),6,1);
     m_d->m_row = 0;
 #endif
